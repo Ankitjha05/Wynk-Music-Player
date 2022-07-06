@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@200&family=Ubuntu:ital,wght@1,300&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@200&family=Varela+Round&display=swap');
+body {
+    background-color: antiquewhite;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav {
+    font-family: 'Ubuntu', sans-serif;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 45px;
+    background-color: black;
+    color: white;
+}
+nav ul li {
+    padding: 0 12px;
+}
+.brand img {
+    height: 40px;
+    padding: 8px 10px;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.container {
+    min-height: 69vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto;
+    width: 75%;
+    border-radius: 12px;
+    padding: 20px;
+    background-image: url('./wynk/bg.jpg');
+    /*https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_background-size*/
+    background-size: 100% 100%;
+}
+.container h1{
+    font-size: 1.3rem;
+}
+
+.buttom {
+    position: sticky;
+    height: 80px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.songInfo{
+    position: absolute;
+    left: 14vw;
+    font-family: 'Varela Round', sans-serif;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.icons {
+    margin: 0 5px;
+    /* height: 5px; */
+    font-size: 0.7em;
+    /* margin-bottom: 10px; */
+}
+.icons i {
+    cursor: pointer;
+}
+
+#myProgressBar {
+    width: 70vw;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.songItemcontainer {
+    margin-top: 20px;
+}
+
+.songItem {
+    height: 20px;
+    display: flex;
+    background-color: white;
+    width: 45%;
+    color: black;
+    margin: 8px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+}
+.songItem img {
+    width: 25px;
+    margin: 0 18px;
+    border-radius: 20px;
+}
+.songlistplay{
+    margin-right: 9px;
+}
+.timestamp{
+    margin: 0 8px;
+}
+.timestamp i{
+    cursor: pointer;
+}
