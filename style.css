@@ -36,7 +36,7 @@ li:last-child {
     font-size: 1.3rem;
 }
 .container {
-    min-height: 69vh;
+    height: 69vh;
     background-color: black;
     color: white;
     font-family: 'Varela Round', sans-serif;
@@ -49,6 +49,7 @@ li:last-child {
     background-image: url('./wynk/bg.jpg');
     /*https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_background-size*/
     background-size: 100% 100%;
+    overflow: scroll;
 }
 .container h1{
     font-size: 1.3rem;
