@@ -123,3 +123,37 @@ li:last-child {
 .timestamp i{
     cursor: pointer;
 }
+
+
+@media screen and (max-width: 890px) {
+    .songItem {
+        height: auto;
+        
+        display: flex;
+        background-color: white;
+        width: 45%;
+        color: black;
+        margin: 8px 0;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        border-radius: 15px;
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .songInfo {
+        display: flex;
+    left: auto;
+    position: relative;
+    font-family: 'Varela Round', sans-serif;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    }
+    .songName{
+        font-weight: bolder;
+    }
+}
