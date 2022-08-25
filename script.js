@@ -10,6 +10,7 @@ let displaytime = document.getElementById('time')
 setInterval(()=>{
     let date = new Date().toLocaleString()
     displaytime.innerHTML = date
+    console.log('ok');
 },1000)
 let songs = [
     { songName: "Baby Shark Dance", filePath: "wynk/songs/1.mp3", coverPath: "wynk/covers/1.jpg" },
