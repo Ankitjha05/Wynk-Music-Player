@@ -10,7 +10,9 @@ let displaytime = document.getElementById('time')
 setInterval(()=>{
     let date = new Date().toLocaleString()
     displaytime.innerHTML = date
+
     console.log('ok');
+
 },1000)
 let songs = [
     { songName: "Baby Shark Dance", filePath: "wynk/songs/1.mp3", coverPath: "wynk/covers/1.jpg" },
@@ -19,7 +21,9 @@ let songs = [
     { songName: "Country Road", filePath: "wynk/songs/4.mp3", coverPath: "wynk/covers/4.jpg" },
     { songName: "Salam-e-Ishq", filePath: "wynk/songs/5.mp3", coverPath: "wynk/covers/5.jpg" },
     { songName: "Raba-Ishq-naHove", filePath: "wynk/songs/6.mp3", coverPath: "wynk/covers/6.jpg" },
-    { songName: "Snam Re --", filePath: "wynk/songs/7.mp3", coverPath: "wynk/covers/7.jpg" },
+
+    { songName: "Snam Re", filePath: "wynk/songs/7.mp3", coverPath: "wynk/covers/7.jpg" },
+
     { songName: "Maula-mere-Maula", filePath: "wynk/songs/8.mp3", coverPath: "wynk/covers/8.jpg" },
     { songName: "Woh Raz Ho", filePath: "wynk/songs/9.mp3", coverPath: "wynk/covers/9.jpg" },
     { songName: "Sach-Keh-Raha-Hai", filePath: "wynk/songs/10.mp3", coverPath: "wynk/covers/10.jpg" }
