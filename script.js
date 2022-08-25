@@ -6,17 +6,22 @@ let gif = document.getElementById('gif')
 let audioElement = new Audio('wynk/songs/1.mp3')
 let songItem = Array.from(document.getElementsByClassName('songItem'))
 let masterSong = document.getElementById('masterSongName')
+let displaytime = document.getElementById('time')
+setInterval(()=>{
+    let date = new Date().toLocaleString()
+    displaytime.innerHTML = date
+},1000)
 let songs = [
-    { songName: "Salam-e-Ishq", filePath: "wynk/songs/1.mp3", coverPath: "wynk/covers/1.jpg" },
-    { songName: "Salam-e-Ishq", filePath: "wynk/songs/2.mp3", coverPath: "wynk/covers/2.jpg" },
-    { songName: "Jag-Suna-Lage", filePath: "wynk/songs/3.mp3", coverPath: "wynk/covers/3.jpg" },
-    { songName: "Salam-e-Ishq", filePath: "wynk/songs/4.mp3", coverPath: "wynk/covers/4.jpg" },
+    { songName: "Baby Shark Dance", filePath: "wynk/songs/1.mp3", coverPath: "wynk/covers/1.jpg" },
+    { songName: "Rockin Robin", filePath: "wynk/songs/2.mp3", coverPath: "wynk/covers/2.jpg" },
+    { songName: "That’s All Right", filePath: "wynk/songs/3.mp3", coverPath: "wynk/covers/3.jpg" },
+    { songName: "Country Road", filePath: "wynk/songs/4.mp3", coverPath: "wynk/covers/4.jpg" },
     { songName: "Salam-e-Ishq", filePath: "wynk/songs/5.mp3", coverPath: "wynk/covers/5.jpg" },
     { songName: "Raba-Ishq-naHove", filePath: "wynk/songs/6.mp3", coverPath: "wynk/covers/6.jpg" },
-    { songName: "Salam-e-Ishq", filePath: "wynk/songs/7.mp3", coverPath: "wynk/covers/7.jpg" },
-    { songName: "Salam-e-Ishq", filePath: "wynk/songs/8.mp3", coverPath: "wynk/covers/8.jpg" },
-    { songName: "Salam-e-Ishq", filePath: "wynk/songs/9.mp3", coverPath: "wynk/covers/9.jpg" },
-    { songName: "Salam-e-Ishq", filePath: "wynk/songs/10.mp3", coverPath: "wynk/covers/10.jpg" }
+    { songName: "Snam Re --", filePath: "wynk/songs/7.mp3", coverPath: "wynk/covers/7.jpg" },
+    { songName: "Maula-mere-Maula", filePath: "wynk/songs/8.mp3", coverPath: "wynk/covers/8.jpg" },
+    { songName: "Woh Raz Ho", filePath: "wynk/songs/9.mp3", coverPath: "wynk/covers/9.jpg" },
+    { songName: "Sach-Keh-Raha-Hai", filePath: "wynk/songs/10.mp3", coverPath: "wynk/covers/10.jpg" }
 ]
 
 songItem.forEach((element, i) => {
@@ -64,6 +69,10 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element) =>
     element.addEventListener('click', (e) => {
         makeAllPlays();
         songIndex = parseInt(e.target.id);
+        if (songIndex > 1) {
+            alert('fisrt two is free , for more please try our premium')
+        }
+        else {
         audioElement.src = `wynk/songs/${songIndex+1}.mp3`
         audioElement.currentTime=0;
         if (audioElement.paused){
@@ -84,6 +93,7 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element) =>
             masterPlay.classList.remove('fa-circle-pause');
             gif.style.opacity = 0;
         }
+    }
         
     })
 })

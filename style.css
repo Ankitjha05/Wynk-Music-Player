@@ -17,9 +17,13 @@ nav ul {
     height: 45px;
     background-color: black;
     color: white;
+    justify-content: space-between;
 }
 nav ul li {
     padding: 0 12px;
+}
+li:last-child {
+   margin-left: auto;
 }
 .brand img {
     height: 40px;
@@ -94,7 +98,7 @@ nav ul li {
 }
 
 .songItem {
-    height: 20px;
+    height: 28px;
     display: flex;
     background-color: white;
     width: 45%;
@@ -117,4 +121,38 @@ nav ul li {
 }
 .timestamp i{
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 890px) {
+    .songItem {
+        height: auto;
+        
+        display: flex;
+        background-color: white;
+        width: 45%;
+        color: black;
+        margin: 8px 0;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        border-radius: 15px;
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .songInfo {
+        display: flex;
+    left: auto;
+    position: relative;
+    font-family: 'Varela Round', sans-serif;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    }
+    .songName{
+        font-weight: bolder;
+    }
 }
