@@ -6,6 +6,11 @@ let gif = document.getElementById('gif')
 let audioElement = new Audio('wynk/songs/1.mp3')
 let songItem = Array.from(document.getElementsByClassName('songItem'))
 let masterSong = document.getElementById('masterSongName')
+let displaytime = document.getElementById('time')
+setInterval(()=>{
+    let date = new Date().toLocaleString()
+    displaytime.innerHTML = date
+},1000)
 let songs = [
     { songName: "Baby Shark Dance", filePath: "wynk/songs/1.mp3", coverPath: "wynk/covers/1.jpg" },
     { songName: "Rockin Robin", filePath: "wynk/songs/2.mp3", coverPath: "wynk/covers/2.jpg" },
