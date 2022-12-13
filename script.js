@@ -1,4 +1,3 @@
-console.log("Welcome to wynk");
 let songIndex = 0;
 let masterPlay = document.getElementById('masterPlay');
 let myProgressBar = document.getElementById('myProgressBar')
